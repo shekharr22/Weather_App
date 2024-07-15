@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="script.js"> -->
+    <title>Weather App | by Shekhar</title>
+    <link rel="icon" href="Images/icon.png">
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="search-box">
+          <input
+            type="text"
+            placeholder="Enter Your location"
+            class="input-type"
+          />
+          <button class="fa-solid fa-magnifying-glass" id="searchBtn"></button>
+        </div>
+      </div>
+
+      <div class = "location-not-found">
+        <h1>Sorry, Location not found!!!</h1>
+        <img src="Images/404.png" alt="image">
+      </div>
+
+      <div class="weather-body">
+        <img src="Images/cloud.png" alt="Weather Image" class="weather-img" />
+
+        <div class="weather-box">
+          <p class="temperature">0 <sup>°C</sup></p>
+          <p class="description">light rain</p>
+        </div>
+
+        <div class="weather-details">
+          <div class="humidity">
+            <span class="material-symbols-outlined">humidity_high</span>
+            <div class="text">
+              <span id="humidity_value">45%</span>
+              <p>Humidity</p>
+            </div>
+          </div>
+
+          <div class="wind">
+            <div class="humidity">
+              <span class="material-symbols-outlined"> air </span>
+              <div class="text">
+                <span id="wind-speed">12Km/H</span>
+                <p>Wind Speed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/0df1d024fe.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
